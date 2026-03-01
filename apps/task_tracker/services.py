@@ -19,4 +19,3 @@ def change_status(*, task: Task, status: str) -> Task:
 	task.full_clean()
 	task.save(update_fields=["status"])
 	return task
-
